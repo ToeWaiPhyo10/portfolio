@@ -6,6 +6,7 @@ import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
 import { LinkArrow } from "@/icons/LinkArrow";
 import { TransitionEffect } from "@/components/TransitionEffect";
+import { AnimatedNumber } from "@/components/AnimatedNumber";
 const Home = () => {
   return (
     <>
@@ -28,10 +29,10 @@ const Home = () => {
                 className="!text-7xl !text-left xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl"
               />
               <p className="my-4 text-base font-medium md:text-sm sm:text-xs">
-                &nbsp; &nbsp; &nbsp;A full stack developer, specializing in
-                React and Node.js. Get ready to explore my digital world, where
-                I showcase the latest and most innovative web creations. Join me
-                on this exciting journey!
+                <b>A full stack web developer</b>, specializing in React and
+                Node.js. Get ready to explore my digital world, where I showcase
+                the latest and most innovative web creations. Join me on this
+                exciting journey!
               </p>
               <div className="flex items-center self-start mt-2 lg:self-center">
                 <Link
@@ -49,6 +50,47 @@ const Home = () => {
                 >
                   Contact
                 </Link>
+              </div>
+              <div className="grid grid-cols-2 gap-4 w-[85%] mt-[3.5rem] md:mt-10">
+                <div className="flex items-center gap-2 justify-start lg:justify-center sm:col-span-2">
+                  <span className="inline-block text-4xl font-bold sm:text-3xl">
+                    <AnimatedNumber value={4} />+
+                  </span>
+                  <div className="text-sm font-medium uppercase text-dark/75 sm:text-xs">
+                    <h2>years of</h2>
+                    <h2>experience</h2>
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-2 justify-center sm:col-span-2">
+                  <span className="inline-block text-4xl font-bold sm:text-3xl">
+                    <AnimatedNumber value={50} />+
+                  </span>
+                  <div className="text-sm font-medium uppercase text-dark/75 sm:text-xs">
+                    <h2>projects</h2>
+                    <h2>done</h2>
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-2 justify-start lg:justify-center sm:col-span-2">
+                  <span className="inline-block text-4xl font-bold sm:text-3xl">
+                    <AnimatedNumber value={100} />%
+                  </span>
+                  <div className="text-sm font-medium uppercase text-dark/75 sm:text-xs">
+                    <h2>satification</h2>
+                    <h2>clients</h2>
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-2 justify-center sm:col-span-2 ">
+                  <span className="inline-block text-4xl font-bold sm:text-3xl">
+                    <AnimatedNumber value={10} />+
+                  </span>
+                  <div className="text-sm font-medium uppercase text-dark/75 sm:text-xs">
+                    <h2>satisfied</h2>
+                    <h2>clients</h2>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
