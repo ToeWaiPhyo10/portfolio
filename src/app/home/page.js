@@ -1,5 +1,5 @@
 import React from "react";
-import Layout from "./layout";
+import AppLayout from "../../components/AppLayout";
 import Image from "next/image";
 import profilePics from "@/images/developer-pic-1.png";
 import AnimatedText from "@/components/AnimatedText";
@@ -12,7 +12,7 @@ const Home = () => {
     <>
       <TransitionEffect />
       <div className="flex-1 flex flex-col items-center text-dark w-full">
-        <Layout className="pt-0 md:pt-16 sm:pt-8">
+        <AppLayout className="pt-0 md:pt-16 sm:pt-8">
           <div className="flex items-center justify-between w-full lg:flex-col">
             <div className="w-1/2 lg:w-2/3 md:w-full">
               <Image
@@ -94,7 +94,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-        </Layout>
+        </AppLayout>
       </div>
     </>
   );
