@@ -1,4 +1,3 @@
-import React from "react";
 import { motion, useScroll } from "framer-motion";
 
 const LiIcon = ({ reference }) => {
@@ -24,6 +23,7 @@ const LiIcon = ({ reference }) => {
           cx="75"
           cy="50"
           r="20"
+          ref={reference}
           className=" stroke-[5px] fill-light"
           style={{ pathLength: scrollYProgress }}
         />

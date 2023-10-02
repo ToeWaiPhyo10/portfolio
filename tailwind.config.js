@@ -41,6 +41,9 @@ module.exports = {
       xs: { max: "479px" },
       // => @media (max-width: 479px) { ... }
     },
+    listStyleType: {
+      square: "square",
+    },
   },
   plugins: [],
 };
