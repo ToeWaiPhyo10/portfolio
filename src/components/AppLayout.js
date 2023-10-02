@@ -1,6 +1,6 @@
 import React from "react";
 
-const Layout = ({ children, className = "" }) => {
+const AppLayout = ({ children, className = "" }) => {
   return (
     <div
       className={`w-full inline-block z-0 px-32 xl:px-24 lg:px-16 md:px-12 sm:px-8 ${className}`}
@@ -10,4 +10,4 @@ const Layout = ({ children, className = "" }) => {
   );
 };
 
-export default Layout;
+export default AppLayout;

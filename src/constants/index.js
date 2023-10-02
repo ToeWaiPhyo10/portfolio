@@ -58,3 +58,45 @@ export const educationData = {
     "Maintained a solid academic record,consistently achieving high grades in computer science coursework.",
   ],
 };
+export const SkillsData = [
+  {
+    skill: "React",
+    progress: 80,
+  },
+  {
+    skill: "React Native",
+    progress: 65,
+  },
+  {
+    skill: "Nodejs",
+    progress: 60,
+  },
+  {
+    skill: "HTML",
+    progress: 85,
+  },
+  {
+    skill: "CSS3",
+    progress: 90,
+  },
+  {
+    skill: "Tailwind",
+    progress: 80,
+  },
+  {
+    skill: "Bootstrap",
+    progress: 80,
+  },
+  {
+    skill: "SQL",
+    progress: 80,
+  },
+  {
+    skill: "Flutter",
+    progress: 45,
+  },
+  {
+    skill: "C#(.NET)",
+    progress: 40,
+  },
+];

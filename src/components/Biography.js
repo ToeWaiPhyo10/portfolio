@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import { AnimatedNumber } from "./AnimatedNumber";
+
 import profilePics from "@/images/IMG_8186.png";
 
 export const Biography = () => {
@@ -42,14 +42,13 @@ export const Biography = () => {
         </p>
       </div>
       <div
-        className="col-span-4 relative h-max rounded-2xl border-2 border-solid border-dark
-            bg-light p-8 md:order-1 md:col-span-8"
+        className="col-span-4 relative h-max border-dark/60 border-2 border-solid shadow-lg
+            bg-light p-4 md:order-1 md:col-span-8 rounded-tr-[616px] rounded-tl-[316px] rounded-bl-[616px] rounded-br-[316px]"
       >
-        <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark" />
         <Image
           src={profilePics}
           alt="ToeWaiPhyo"
-          className="w-full h-auto rounded-2xl bg-dark/80"
+          className="w-full h-auto bg-dark/80 rounded-tr-[600px] rounded-tl-[310px] rounded-bl-[600px] rounded-br-[300px]"
         />
       </div>
     </div>

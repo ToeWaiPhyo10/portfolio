@@ -16,10 +16,10 @@ module.exports = {
         sans: "var(--font-open-sans)",
       },
       colors: {
-        dark: "#1b1b1b",
-        light: "#f5f5f5",
-        primary: "#B63E96",
-        primaryDark: "#58E6D9",
+        dark: "#213555",
+        light: "#F0F0F0",
+        primary: "#4F709C",
+        primaryDark: "#E5D283",
       },
     },
     screens: {

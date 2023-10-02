@@ -3,6 +3,7 @@ import React, { useRef } from "react";
 import ExperienceDetail from "./ExperienceDetail";
 import { motion, useScroll } from "framer-motion";
 import { educationData } from "@/constants";
+import AnimatedText from "./AnimatedText";
 
 const Education = () => {
   const eduRef = useRef();
@@ -12,9 +13,10 @@ const Education = () => {
   });
   return (
     <div className="my-40">
-      <h2 className="font-bold mb-16 w-full text-center !text-6xl lg:!text-5xl sm:!text-4xl xl:!text-3xl md:mb-8">
-        Education
-      </h2>
+      <AnimatedText
+        text="Education"
+        className="mb-16 !text-6xl lg:!text-5xl sm:!text-4xl xl:!text-3xl sm:mb-8"
+      />
       <div className="w-[80%] mx-auto relative lg:w-[90%] md:w-full">
         <motion.div
           ref={eduRef}

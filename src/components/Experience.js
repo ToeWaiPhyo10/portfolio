@@ -3,6 +3,7 @@ import { useRef } from "react";
 import { motion, useScroll } from "framer-motion";
 import ExperienceDetail from "@/components/ExperienceDetail.js";
 import { experienceData } from "@/constants";
+import AnimatedText from "./AnimatedText";
 
 export const Experience = () => {
   const ref = useRef(null);
@@ -11,10 +12,11 @@ export const Experience = () => {
     offset: ["start end", "center start"],
   });
   return (
-    <div className="my-40">
-      <h2 className="font-bold mb-16 w-full text-center !text-6xl lg:!text-5xl sm:!text-4xl xl:!text-3xl md:mb-8">
-        Experience
-      </h2>
+    <div className="my-20">
+      <AnimatedText
+        text="Experiences"
+        className="mb-16 !text-6xl lg:!text-5xl sm:!text-4xl xl:!text-3xl sm:mb-8"
+      />
       <div className="w-[80%] mx-auto relative lg:w-[90%] md:w-full">
         <motion.div
           ref={ref}
